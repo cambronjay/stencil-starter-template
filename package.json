@@ -1,0 +1,45 @@
+{
+  "name": "stencil-starter-template",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil starter template without the hassle of frameworks.",
+  "scripts": {
+    "lint": "eslint src/ --ext .js,.ts,.jsx,.tsx",
+    "lint.fix": "lint -- --fix",
+    "buildStatic": "stencil build --prerender",
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "serve": "stencil serve --root www",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "customDeploy": "npm run build",
+    "firebaseDeploy": "npm run build && firebase deploy"
+  },
+  "dependencies": {
+    "@capacitor/core": "^2.4.2",
+    "@capacitor/ios": "^2.4.2",
+    "@ionic/core": "^5.4.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^2.4.2",
+    "@stencil/core": "^2.2.0",
+    "@types/jest": "26.0.15",
+    "@types/puppeteer": "5.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "@typescript-eslint/parser": "^4.6.1",
+    "eslint": "^7.12.1",
+    "jest": "26.6.2",
+    "jest-cli": "26.6.2",
+    "puppeteer": "5.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cambronjay/stencil-starter-template.git"
+  },
+  "author": "Jay Cambron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cambronjay/stencil-starter-template"
+  },
+  "homepage": "https://github.com/cambronjay/stencil-starter-template"
+}

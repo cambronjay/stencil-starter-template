@@ -1,0 +1,7 @@
+
+{
+    "appId": "io.stencil.starter",
+    "appName": "Stencil Starter",
+    "bundledWebRuntime": false,
+    "webDir": "www"
+  }
